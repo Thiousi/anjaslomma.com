@@ -1,0 +1,36 @@
+{
+  "name": "anjaslomma.com",
+  "description": "bower json file for anjaslomma.com",
+  "main": "",
+  "moduleType": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "bootstrap",
+    "bower",
+    "kirby",
+    "starterkit"
+  ],
+  "authors": "Hendrik Berends <mail@hennirocks.de> (http://hennirocks.de)",
+  "homepage": "https://github.com/NECKRHINOS/anjaslomma.com#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NECKRHINOS/anjaslomma.git"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4",
+    "modernizer": "^2.8.2",
+    "ekko-lightbox": "^4.0.2"
+  },
+  "devDependencies": "",
+  "private": true
+}

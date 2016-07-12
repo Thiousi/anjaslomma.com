@@ -1,0 +1,40 @@
+.caption {
+    @include transition;
+    color:$dark;
+    padding: 8px 15px;
+
+    h2 {
+        text-transform: none;
+
+        &.base {
+            font-size: 16px;
+        }
+
+        &.large {
+            font-size: 24px;
+        }
+
+        &.larger {
+            font-size: 30px;
+        }
+    }
+}
+
+.thumbnail {
+    background-color: $grey;
+    border: none;
+    line-height: 1.6;
+    min-height: 325px;
+    padding: 0;
+    position: relative;
+
+    a:focus .caption,
+    a:hover .caption {
+        @include transition;
+    }
+
+    &-scroll {
+        max-height: 310px;
+        overflow: hidden;
+    }
+}

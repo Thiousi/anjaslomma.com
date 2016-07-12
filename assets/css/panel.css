@@ -1,0 +1,9 @@
+.label abbr,
+sup {
+    font-weight: normal;
+}
+
+sup {
+    color: #8dae28;
+    line-height: 0;
+}

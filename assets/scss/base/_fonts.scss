@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'advent_prolight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/adventpro-light-webfont.eot');
+    src: url('../fonts/adventpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adventpro-light-webfont.woff2') format('woff2'),
+         url('../fonts/adventpro-light-webfont.woff') format('woff'),
+         url('../fonts/adventpro-light-webfont.ttf') format('truetype'),
+         url('../fonts/adventpro-light-webfont.svg#advent_prolight') format('svg');
+}
+
+@font-face {
+    font-family: 'advent_prothin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/adventpro-thin-webfont.eot');
+    src: url('../fonts/adventpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adventpro-thin-webfont.woff2') format('woff2'),
+         url('../fonts/adventpro-thin-webfont.woff') format('woff'),
+         url('../fonts/adventpro-thin-webfont.ttf') format('truetype'),
+         url('../fonts/adventpro-thin-webfont.svg#advent_prothin') format('svg');
+}
+
+@font-face {
+    font-family: 'droid_serifregular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/DroidSerif-Regular-webfont.eot');
+    src: url('../fonts/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-Regular-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-Regular-webfont.svg#droid_serifregular') format('svg');
+}
+
+@font-face {
+    font-family: 'droid_serifbold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/DroidSerif-Bold-webfont.eot');
+    src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-Bold-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
+}

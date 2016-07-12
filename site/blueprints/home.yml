@@ -1,0 +1,9 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Startseite
+pages: false
+files: false
+fields:
+  title:
+    label: Titel
+    type:  text

@@ -1,0 +1,66 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Website
+pages:
+  template:
+    - default
+    - projects
+    - redirect
+files:
+  fields:
+    alttext:
+      label: Alt-Text
+      type:  text
+fields:
+  tab1:
+    label:   Inhalt
+    type:    tabs
+  title:
+    label:   Titel der Website
+    type:    text
+  email:
+    label:   E-Mail für Kontaktformular
+    type:    email
+  facebook:
+    label:   Facebook
+    type:    url
+    width:   1/2
+    icon:    facebook
+  pinterest:
+    label:   Pinterest
+    type:    url
+    width:   1/2
+    icon:    pinterest
+  copyright:
+    label:   Copyright
+    type:    markdown
+    help:    <i class="fa fa-lightbulb-o"></i> <a href="../../assets/docs/kirbytext101.html" target="_blank">Kirbytext 101</a>
+  tab2:
+    label:   Hintergrundbild
+    type:    tabs
+  background:
+    label:   Hintergrundbild
+    type:    select
+    options: images
+  backgroundstyle:
+    label:   Optionen
+    type:    radio
+    options:
+      repeat: Wiederholung
+      cover: Vollflächig
+  tab3:
+    label:   SEO
+    type:    tabs
+  author:
+    label:   Autorin
+    type:    text
+    icon:    user
+  description:
+    label:   Meta-Beschreibung
+    type:    textarea
+    icon:    font
+    buttons: false
+  info:
+    label:   Suchmaschinenoptimierung (SEO)
+    type:    info
+    text:    <ul><li><a href="http://de.wikipedia.org/wiki/Alt-Text" target="_blank">Alt-Texte</a> bei Bildern verwenden</li><li>bis zu 159 Zeichen inkl. Leerstellen für Meta-Beschreibung</li><li>nicht mehr als 65 Zeichen inkl. Leerstellen für Titel der Website insgesamt</li></ul>

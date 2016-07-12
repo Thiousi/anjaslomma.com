@@ -1,0 +1,26 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Kontakt
+pages: false
+fields:
+  title:
+    label:   Titel
+    type:    text
+  showform:
+    label:   Kontaktformular anzeigen?
+    type:    radio
+    options:
+      on:    Ja
+      off:   Nein
+  text:
+    label:   Text und Bild
+    type:    textarea
+    help:    <i class="fa fa-lightbulb-o"></i> <a href="/assets/docs/kirbytext101.html" target="_blank">Textformatierung mit Kirby</a>
+  description:
+    label:   Meta-Beschreibung
+    type:    textarea
+    buttons: false
+  info1:
+    label:   Suchmaschinenoptimierung (SEO)
+    type:    info
+    text:    Die folgenden Angaben sind individuell; Werden diese nicht ausgefüllt, greifen die globalen Angaben.<ul><li><strong>Titel-Suffix:</strong> An dieser Stelle sollten nicht mehr als 65 Zeichen inkl. Leerstellen verwendet werden.</li><li><strong>Meta-Beschreibung:</strong> An dieser Stelle sollten nicht mehr als 159 Zeichen inkl. Leerstellen verwendet werden.</li></ul>

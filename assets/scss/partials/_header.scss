@@ -1,0 +1,50 @@
+header {
+
+    &.outer {
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        .inner {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
+    &.row {
+
+        @media (min-width: 768px) {
+            margin: 50px -15px;
+        }
+    }
+
+    .row {
+        margin: 0 -15px;
+
+        @media (min-width: 768px) {
+            margin: 0 -15px 50px;
+        }
+    }
+
+    .title {
+        color: $dark;
+
+        .h1 {
+            font-family: 'advent_prothin', sans-serif;
+            font-size: 4em;
+            font-weight: 100;
+            letter-spacing: 5px;
+            line-height: .9;
+
+            @media (min-width: 768px) {
+                letter-spacing: 15px;
+                line-height: .6;
+            }
+        }
+    }
+
+    hr {
+        box-shadow: 0 1px 0 $white;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin origin($origin) {
+    transform-origin: ($origin);
+}
+
+@mixin rotate($deg) {
+    transform: rotate($deg);
+}
+
+@mixin scale($value) {
+    transform: scale($value);
+}

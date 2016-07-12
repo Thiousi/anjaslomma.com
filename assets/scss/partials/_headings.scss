@@ -1,0 +1,9 @@
+@for $index from 1 through 6 {
+    h#{$index},
+    .h#{$index} {
+        font-family: 'advent_prolight', sans-serif;
+        letter-spacing: 1px;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+}

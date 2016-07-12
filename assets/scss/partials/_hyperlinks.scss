@@ -1,0 +1,39 @@
+a {
+    @include transition;
+    color: $dark;
+
+    &:focus,
+    &:hover {
+        @include transition;
+        color: $black;
+        text-decoration: none;
+
+        .fa-facebook-official,
+        .fa-google-plus-square,
+        .fa-pinterest-square,
+        .fa-tumblr-square,
+        .fa-twitter-square {
+            @include transition;
+        }
+
+        .fa-facebook-official {
+            color: $facebook;
+        }
+
+        .fa-google-plus-square {
+            color: $google-plus;
+        }
+
+        .fa-pinterest-square {
+            color: $pinterest;
+        }
+
+        .fa-tumblr-square {
+            color: $tumblr;
+        }
+
+        .fa-twitter-square {
+            color: $twitter;
+        }
+    }
+}

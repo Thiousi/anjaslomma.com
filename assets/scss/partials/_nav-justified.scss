@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .nav-justified li {
+        position: relative;
+
+        &:after {
+            color: $white;
+            content: '//';
+            line-height: 2.6;
+            position: absolute;
+            right: -10px;
+            top: 0;
+            z-index: 10;
+        }
+
+        &:last-of-type:after {
+            content: '';
+        }
+    }
+
+    .nav-tabs.nav-justified li:after {
+        color: #fff;
+        content: '//';
+        line-height: 2.6;
+        position: absolute;
+        right: -10px;
+        top: 0;
+        z-index: 10;
+    }
+}

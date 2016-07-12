@@ -1,0 +1,10 @@
+.zoom {
+    @include scale(1);
+    @include transition;
+
+    &:focus,
+    &:hover {
+        @include scale(1.05);
+        @include transition;
+    }
+}

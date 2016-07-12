@@ -1,0 +1,4 @@
+@mixin fa($code) {
+    content: ($code);
+    font-family: FontAwesome;
+}

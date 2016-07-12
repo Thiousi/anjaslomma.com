@@ -1,0 +1,50 @@
+.dropdown-menu {
+
+    > .active > a,
+    > .active > a:focus,
+    > .active > a:hover,
+    li.active a {
+        background-color: $black;
+    }
+}
+
+.nav .dropdown-menu {
+    background-color: $grey;
+    border: none;
+    border-radius: 0;
+    float: none;
+    font-family: 'advent_prolight', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+        float: left;
+        position: absolute;
+    }
+
+    li {
+
+        @media (min-width: 768px) {
+            &:after {
+                content: '';
+            }
+        }
+
+        &.active a {
+            color: $white;
+        }
+
+        a {
+            color: $dark;
+            font-weight: 200;
+            padding: 10px;
+
+            &:focus,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

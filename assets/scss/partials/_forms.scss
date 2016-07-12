@@ -1,0 +1,29 @@
+.form {
+
+    &-control {
+        background-color: $light;
+        border: none;
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        &:-ms-input-placeholder {
+            color: $dark;
+        }
+
+        &:-moz-input-placeholder {
+            color: $dark;
+        }
+
+        &::-moz-input-placeholder {
+            color: $dark;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $dark;
+        }
+    }
+}

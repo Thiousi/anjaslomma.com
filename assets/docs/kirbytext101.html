@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kirbytext 101</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style type="text/css">.container{max-width:960px}</style>
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Kirbytext 101</h1>
+                <p><strong>Formatting text:</strong> Kirby uses an extended version of John Gruber's fantastic <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown</a>, called Kirbytext. Kirbytext is a simple syntax to format plain text, which is easy to understand and read.</p>
+                <p>Kirbytext inherits all the basic Markdown tags and extends them with simpler tags to add images, embed videos or include download links for files. Kirbytext can be extended further to offer even better ways for editors to enhance content.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Basic formats</h2>
+                    </div>
+                    <h3>Line breaks &amp; paragraphs</h3>
+                    <p>Kirbytext automatically converts single line breaks and paragraphs.</p>
+                    <pre>My first line<br>My second line<br><br>Another paragraph</pre>
+                    <h3>Headlines</h3>
+                    <pre># Headline 1<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br><br>## Headline 2<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br><br>### Headline 3<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br><br>#### Headline 4<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</pre>
+                    <div class="alert alert-info">
+                        <strong>Manual line break:</strong> Use <code>&lt;br&gt;</code> to force a line break manually.
+                        <br>
+                        <strong>Hashtags:</strong> In order to write a hashtag you need to escape the headline: <code>#\hashtag</code>
+                    </div>
+                    <h3>Bold Text</h3>
+                    <pre>**The quick brown fox jumps over the lazy dog**</pre>
+                    <h3>Italic Text</h3>
+                    <pre>_The quick brown fox jumps over the lazy dog_</pre>
+                    <h3>Unordered Lists</h3>
+                    <pre>The Simpsons:<br><br>- Homer<br>- Marge<br>- Bart<br>- Lisa<br>- Maggie</pre>
+                    <h3>Ordered Lists</h3>
+                    <pre>The Simpsons:<br><br>1. Homer<br>2. Marge<br>3. Bart<br>4. Lisa<br>5. Maggie</pre>
+                    <div class="alert alert-info">
+                        <strong>Numbers, not lists.</strong> In order to write a date (for example) you need to escape the numbers: <code>01\. 01. 1970</code>
+                    </div>
+                    <h3>Horizontal Rules</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br><br>****<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</pre>
+                    <h3>Quotes</h3>
+                    <pre>&gt; Design is not just what it looks like and feels like.<br>&gt; Design is how it works.<br><br>â€“ Steve Jobs</pre>
+                    <h3>Code Blocks</h3>
+                    <pre>```<br>&lt;?php<br><br>// awesome code example<br><br>?&gt;<br>```</pre>
+                    <div class="page-header">
+                        <h2>Columns</h2>
+                    </div>
+                    <p>The <code>++++</code> seperator is used to divide text into columns. You can create additional columns by just adding more separators. Just make sure to provide the necessary classes for more columns in your css. With the provided css you can add up to four columns. For the opening and closing column tags you can either use the more elegant ellipsis &#133; (Alt+. on a Mac) or three dots.</p>
+                    <pre>(columns&#133;)<br><br>## Column A<br>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.<br><br>++++<br><br>## Column B<br>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.<br><br>++++<br><br>## Column C<br>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.<br><br>(&#133;columns)</pre>
+                    <div class="page-header">
+                        <h2>Links</h2>
+                    </div>
+                    <p>Link without link text:</p>
+                    <pre>&lt;http://wikipedia.org&gt;<br><br>or<br><br>(link: http://wikipedia.org)</pre>
+                    <p>Link with link text:</p>
+                    <pre>(link: http://wikipedia.org text: Wikipedia)</pre>
+                    <p>Open link in a new window</p>
+                    <pre>(link: http://wikipedia.org text: Wikipedia popup: yes)</pre>
+                    <p>Link with a title</p>
+                    <pre>(link: http://wikipedia.org text: Wikipedia title: Go to Wikipedia)</pre>
+                    <p>Link with a custom CSS class</p>
+                    <pre>(link: http://wikipedia.org text: Wikipedia class: mylink)</pre>
+                    <h3>Relative links</h3>
+                    <p>To link to any page of your site, you can simply use relative links without typing the entire URL. This will make sure, links won't break when you move your site to a different domain or when you are testing your site locally.</p>
+                    <pre>(link: docs/getting-started)<br>(link: blog/text-formatting-101)</pre>
+                    <h3>Email Addresses</h3>
+                    <p>Kirby will automatically encrypt your email addresses, so they won't be that easy to be parsed and misused by spam bots.</p>
+                    <p>Email without link text</p>
+                    <pre>&lt;bastian@getkirby.com&gt;<br><br>or<br><br>(email: bastian@getkirby.com)</pre>
+                    <p>Email with link text</p>
+                    <pre>(email: bastian@getkirby.com text: Send me an email)</pre>
+                    <p>Email with a title</p>
+                    <pre>(email: bastian@getkirby.com text: Send me an email title: Contact me)</pre>
+                    <p>Email with a custom CSS class</p>
+                    <pre>(email: bastian@getkirby.com text: Send me an email class: email)</pre>
+                    <h3>Phone numbers</h3>
+                    <p>Linked phone number:</p>
+                    <pre>(tel: +49621123456789)</pre>
+                    <p>Linked phone number with custom text:</p>
+                    <pre>(tel: +49621123456789 text: +49 621 123 456 789)</pre>
+                    <p>Linked phone number with custom text and class:</p>
+                    <pre>(tel: +49621123456789 text: +49 621 123 456 789 class: phone)</pre>
+                    <div class="page-header">
+                        <h2>Images</h2>
+                    </div>
+                    <h3>Images in your content folder</h3>
+                    <p>You can easily embed any images from your page's content folder.</p>
+                    <pre>(image: myawesomepicture.jpg)</pre>
+                    <p>Set the width and height of an image</p>
+                    <pre>(image: myawesomepicture.jpg width: 120 height: 200)</pre>
+                    <p>Define an alternative text for an image</p>
+                    <pre>(image: myawesomepicture.jpg alt: On this picture you can see a cat)</pre>
+                    <p>Sometimes you need to add floating or special styling to particular images. Best way to do this is to go for a custom css class.</p>
+                    <pre>(image: myawesomepicture.jpg class: floated)</pre>
+                    <p>A linked image</p>
+                    <pre>(image: myawesomepicture.jpg link: http://flickr.com)</pre>
+                    <p>You can even link to the same picture â€“ maybe for a lightbox feature â€“ or to a different picture in the same content folder.</p>
+                    <pre>(image: myawesomepicture.jpg link: anothergreatpic.jpg)</pre>
+                    <p>Adding a caption</p>
+                    <pre>(image: myawesomepicture.jpg caption: I took this image in the park)</pre>
+                    <h3>Images from other websites</h3>
+                    <p>To embed images from other websites, simply use the direct URL to the image. Please make sure you got the copyright and the permission to deep-link to an external image!</p>
+                    <pre>(image: http://flickr.com/someimage.jpg)</pre>
+                    <p>Of course all the additional attributes, described above, are available for external images as well.</p>
+                    <div class="page-header">
+                        <h2>Files</h2>
+                    </div>
+                    <p>Provide a download link to a file in your page's content folder.</p>
+                    <pre>(file: companysecrets.pdf)</pre>
+                    <p>Download link with link text</p>
+                    <pre>(file: companysecrets.pdf text: Download our company secrets)</pre>
+                    <div class="page-header">
+                        <h2>Youtube &amp; Vimeo Videos</h2>
+                    </div>
+                    <p>Kirbytext has a built-in way to add Youtube and Vimeo videos to any page without the hassle of fiddling with those scary embed codes. All you need is the URL of the video.</p>
+                    <pre>(youtube: http://www.youtube.com/watch?v=lLuc6rtWkrM)<br><br>or<br><br>(vimeo: http://vimeo.com/3432886)</pre>
+                    <p>Set the width and height of the embedded video</p>
+                    <pre>(vimeo: http://vimeo.com/3432886 width: 400 height: 300)</pre>
+                    <div class="page-header">
+                        <h2>Twitter Profile Links</h2>
+                    </div>
+                    <p>Linking to Twitter profiles has become almost as important as linking to your own website. Thus Kirby provides a simple way to link to any Twitter profile.</p>
+                    <pre>(twitter: getkirby)</pre>
+                    <p>With link text:</p>
+                    <pre>(twitter: getkirby text: Follow Kirby on Twitter)</pre>
+                    <div class="page-header">
+                        <h2>Embedding Github Gists</h2>
+                    </div>
+                    <p>Github is probably the most awesome platform for all developers and sharing pieces of code with a Github Gist is fantastic. Those Gists can be embedded in any page as easy as it is to embed a Youtube video.</p>
+                    <pre>(gist: https://gist.github.com/2556891)</pre>
+                    <p>Define, which file you want to embed</p>
+                    <pre>(gist: https://gist.github.com/2556891 file: targetblank.js)</pre>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <p><a href="http://getkirby.com/docs/content/text" target="_blank">© 2009-2015 Bastian Allgeier GmbH</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

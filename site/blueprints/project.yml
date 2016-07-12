@@ -1,0 +1,42 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Projekt
+pages: false
+fields:
+  title:
+    label:    Titel
+    type:     text
+    width:    1/2
+  preview:
+    label:    Vorschaubild
+    type:     select
+    options:  images
+    width:    1/2
+  titlesize:
+    label:    Größe des Titels (in Vorschau)
+    type:     radio
+    options:
+      base:   Normal (16px)
+      large:  Groß (24px)
+      larger: Größer (30px)
+    default:  base
+  teaser:
+    label:    Anlesertext
+    type:     textarea
+    buttons:  false
+  text:
+    label:    Text und Bild
+    type:     textarea
+    help:     <i class="fa fa-lightbulb-o"></i> <a href="/assets/docs/kirbytext101.html" target="_blank">Textformatierung mit Kirby</a>
+  description:
+    label:    Meta-Beschreibung
+    type:     textarea
+    buttons:  false
+  info1:
+    label:    Suchmaschinenoptimierung (SEO)
+    type:     info
+    text:     Die folgenden Angaben sind individuell; Werden diese nicht ausgefüllt, greifen die globalen Angaben.<ul><li><strong>Titel-Suffix:</strong> An dieser Stelle sollten nicht mehr als 65 Zeichen inkl. Leerstellen verwendet werden.</li><li><strong>Meta-Beschreibung:</strong> An dieser Stelle sollten nicht mehr als 159 Zeichen inkl. Leerstellen verwendet werden.</li></ul>
+  info2:
+    label:    Anleser
+    type:     info
+    text:     In der Vorschau eines Projekts können nur maximal 22 Zeichen für den Titel und 50 Zeichen für den Anlesertext vollständig angezeigt werden. Bei mehr Zeichen wird automatisch gekürzt.

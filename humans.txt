@@ -1,0 +1,69 @@
+/* TEAM */
+
+    Hendrik Berends
+    Twitter: @hennirocks
+    URL: http://hennirocks.de
+
+
+/* THANKS */
+
+    Bootstrap,
+    by Mark Otto & Jacob Thornton
+    Twitter: @twbootstrap
+    URL: http://getbootstrap.com
+
+    Contact form,
+    by Stephan Ploehn
+    Twitter: @hallodorban
+    URL: https://dorban.org
+
+    Font Awesome,
+    by Dave Gandy
+    Twitter: @davegandy
+    URL: http://fortawesome.github.io/Font-Awesome
+
+    Kirby,
+    by Bastian Allgeier
+    Twitter: @bastianallgeier
+    URL: http://bastianallgeier.com
+
+    Markdown Kirby field,
+    by Jonas Doebertin
+    Twitter: @dieserjonas
+    URL: http://jd-powered.net
+
+    Sitemap Kirby plugin,
+    by Thomas Ghysels
+    Twitter: @_thgh
+    URL: https://thomasg.be
+
+    Tabs Kirby field,
+    by Ahmet Bora
+    Twitter: @afbora
+    URL: https://www.pixelturk.net
+
+
+/* FONTS */
+
+    Advent Pro,
+    by Andreas Kalpakidis
+    Specimens: https://www.google.com/fonts/specimen/Advent+Pro
+
+    Droid Sans,
+    by Steve Matteson
+    Specimens: https://www.google.com/fonts/specimen/Droid+Sans
+
+
+/* SITE */
+
+    Standards: CSS3, HTML5, PHP
+    Doctype: HTML5
+    Language: English
+    Components: Bootstrap, Bower, Gulp, jQuery, Node
+    IDE: Atom, Photoshop
+
+    Powered by:
+    http://getkirby.com
+
+    Hosted by:
+    https://www.strato.de

@@ -1,0 +1,10 @@
+figure {
+
+    > img {
+        margin: 0 0 10px;
+    }
+
+    &.center > img {
+        margin: 0 auto 10px;
+    }
+}

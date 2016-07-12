@@ -1,0 +1,13 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Umleitung
+pages: projects
+files: false
+fields:
+  title:
+    label: Titel
+    type:  text
+  info1:
+    label: Seitenvorlage <i class="fa fa-info-circle"></i>
+    type:  info
+    text:  Diese Vorlage sorgt dafür, das automatisch auf die <i>erste sichtbare Unterseite</i> weitergeleitet wird.

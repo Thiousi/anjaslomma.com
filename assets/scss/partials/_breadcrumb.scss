@@ -1,0 +1,13 @@
+.breadcrumb {
+    background-color: transparent;
+
+    .active a,
+    .active a:focus,
+    .active a:hover {
+        color: $dark;
+    }
+
+    > li + li:before {
+        content: '//';
+    }
+}

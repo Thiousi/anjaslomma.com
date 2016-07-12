@@ -1,0 +1,43 @@
+.navbar-inverse {
+
+    .navbar-toggle,
+    .navbar-toggle:focus,
+    .navbar-toggle:hover {
+        border-color: transparent;
+    }
+}
+
+.navbar-toggle {
+
+    .icon-bar {
+        @include transition;
+        background-color: $dark;
+        width: 22px;
+
+        &.top-bar {
+            @include rotate(45deg);
+            @include origin(10% 10%);
+        }
+
+        &.middle-bar {
+            opacity: 0;
+        }
+
+        &.bottom-bar {
+            @include rotate(-45deg);
+            @include origin(10% 90%);
+        }
+    }
+
+    &.collapsed .icon-bar {
+
+        &.top-bar,
+        &.bottom-bar {
+            @include rotate(0);
+        }
+
+        &.middle-bar {
+            opacity: 1;
+        }
+    }
+}

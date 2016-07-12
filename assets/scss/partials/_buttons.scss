@@ -1,0 +1,12 @@
+.btn  {
+
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+    }
+
+    &-lg {
+        background-color: $light;
+        color: $dark;
+    }
+}
