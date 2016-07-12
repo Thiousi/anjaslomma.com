@@ -8,6 +8,8 @@ Icon
 bower_components
 node_modules
 
+assets/avatars/**/*.jpg
+
 content/**/*.gif
 content/**/*.jpeg
 content/**/*.jpg
