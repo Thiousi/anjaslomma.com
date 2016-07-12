@@ -56,11 +56,13 @@
 
 /* SITE */
 
+    Last update: 2016/07/12
+
     Standards: CSS3, HTML5, PHP
     Doctype: HTML5
     Language: English
     Components: Bootstrap, Bower, Gulp, jQuery, Node
-    IDE: Atom, Photoshop
+    IDE: Atom
 
     Powered by:
     http://getkirby.com
